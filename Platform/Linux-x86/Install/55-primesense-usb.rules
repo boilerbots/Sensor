@@ -4,4 +4,7 @@ SYSFS{idProduct}=="0300",SYSFS{idVendor}=="1d27",MODE="666",OWNER="xxx",GROUP="u
 SYSFS{idProduct}=="0400",SYSFS{idVendor}=="1d27",MODE="666",OWNER="xxx",GROUP="users"
 SYSFS{idProduct}=="0500",SYSFS{idVendor}=="1d27",MODE="666",OWNER="xxx",GROUP="users"
 SYSFS{idProduct}=="0600",SYSFS{idVendor}=="1d27",MODE="666",OWNER="xxx",GROUP="users"
+SYSFS{idProduct}=="02ae",SYSFS{idVendor}=="045e",MODE="666",OWNER="xxx",GROUP="users"
+SYSFS{idProduct}=="02ad",SYSFS{idVendor}=="045e",MODE="666",OWNER="xxx",GROUP="users"
+SYSFS{idProduct}=="02b0",SYSFS{idVendor}=="045e",MODE="666",OWNER="xxx",GROUP="users"
 
