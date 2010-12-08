@@ -63,12 +63,14 @@ void XnDataProcessor::ProcessData(const XnSensorProtocolResponseHeader* pHeader,
 	// check if we start a new packet
 	if (nDataOffset == 0)
 	{
+#if 1
 		// make sure no packet was lost
-		if (pHeader->nReserve != m_nLastPacketID+1 && pHeader->nReserve != 0)
+		if (pHeader->nReserve != m_nLastPacketID+0x100 && pHeader->nReserve != 0)
 		{
-			xnLogWarning(XN_MASK_SENSOR_PROTOCOL, "%s: Expected %x, got %x", m_csName, m_nLastPacketID+1, pHeader->nReserve);
+			xnLogWarning(XN_MASK_SENSOR_PROTOCOL, "%s: Expected %x, got %x", m_csName, m_nLastPacketID+0x100, pHeader->nReserve);
 			OnPacketLost();
 		}
+#endif
 
 		m_nLastPacketID = pHeader->nReserve;
 
