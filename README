@@ -1,3 +1,14 @@
+This is a Fork from PrimeSensor. The goal is to get the Kinect working.
+
+Please use the "kinect" branch if you want this to work on a kinect.
+This is a quick and dirty hack I made to prove that it can be done.
+
+Follow the PrimeSense build instructions below. 
+
+ * First you must get, build and install openNI first. 
+ * Second clone my kinect branch of Sensor, build and install.
+ * Third run the NiViewer in the Bin/Release directory and there you go.
+
 PrimeSensor Modules for OpenNI
 ------------------------------
 Website: www.primesense.com
